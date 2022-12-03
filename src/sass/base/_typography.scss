@@ -1,0 +1,64 @@
+:root {
+    // fonts
+
+    // base values
+    --text-base-size: 1rem;
+
+    // typescale
+    --text-xs: calc(var(--text-base-size) * 0.75);
+    --text-sm: calc(var(--text-base-size) * 0.875);
+    --text-md: calc(var(--text-base-size));
+    --text-lg: calc(var(--text-base-size) * 1.5);
+    --text-xl: calc(var(--text-base-size) * 2);
+}
+
+.primary-font {
+}
+
+.secondary-font {
+}
+
+body {
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+}
+
+h1,
+.text-xl {
+    font-size: var(--text-xl);
+}
+
+h2,
+.text-lg {
+    font-size: var(--text-lg);
+}
+
+h3,
+.text-md {
+    font-size: var(--text-md);
+}
+
+h4,
+.text-sm {
+    font-size: var(--text-sm);
+}
+
+h5,
+.text-xs {
+    font-size: var(--text-xs);
+}
+
+p {
+    font-size: var(--text-md);
+}
+
+.split-text {
+    font-kerning: none;
+    overflow: hidden;
+}

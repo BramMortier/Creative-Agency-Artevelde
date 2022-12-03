@@ -1,0 +1,80 @@
+/*!************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[3]!./src/sass/style.scss ***!
+  \************************************************************************************************************************************************************************************/
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--col-primary);
+  min-height: 100vh;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+:root {
+  --space-xxxs: 0.1rem;
+  --space-xxs: 0.25rem;
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1rem;
+  --space-lg: 1.25rem;
+  --space-xl: 2rem;
+  --space-xxl: 3.25rem;
+  --space-xxxl: 5.25rem;
+}
+
+:root {
+  --text-base-size: 1rem;
+  --text-xs: calc(var(--text-base-size) * 0.75);
+  --text-sm: calc(var(--text-base-size) * 0.875);
+  --text-md: calc(var(--text-base-size));
+  --text-lg: calc(var(--text-base-size) * 1.5);
+  --text-xl: calc(var(--text-base-size) * 2);
+}
+
+h1,
+.text-xl {
+  font-size: var(--text-xl);
+}
+
+h2,
+.text-lg {
+  font-size: var(--text-lg);
+}
+
+h3,
+.text-md {
+  font-size: var(--text-md);
+}
+
+h4,
+.text-sm {
+  font-size: var(--text-sm);
+}
+
+h5,
+.text-xs {
+  font-size: var(--text-xs);
+}
+
+p {
+  font-size: var(--text-md);
+}
+
+/*# sourceMappingURL=bundle.css.map*/
