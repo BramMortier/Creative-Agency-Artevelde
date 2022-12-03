@@ -1,9 +1,12 @@
 :root {
     // main colors
-
+    --col-light-beige: hsl(60, 16%, 91%);
+    --col-dark-beige: hsl(58, 19%, 75%);
+    --col-brown: hsl(30, 14%, 25%);
     // grays
-
-    // accent colors
+    --col-light-gray: hsl(197, 9%, 69%);
+    --col-dark-gray: hsl(194, 6%, 42%);
+    --col-white: hsl(0, 0%, 100%);
 
     // component colors (for theming)
 }

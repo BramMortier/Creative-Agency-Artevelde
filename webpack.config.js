@@ -21,6 +21,7 @@ module.exports = {
     devtool: "source-map",
     module: {
         rules: [
+            // javascript
             {
                 test: /\.js$/,
                 exclude: /(node_modules)/,
@@ -31,6 +32,7 @@ module.exports = {
                     },
                 },
             },
+            // sass
             {
                 test: /\.(sa|sc|c)ss$/,
                 use: [
@@ -51,6 +53,7 @@ module.exports = {
                     },
                 ],
             },
+            // images
             {
                 test: /\.(png|jpe?g|gif|svg)$/,
                 use: [
@@ -58,6 +61,19 @@ module.exports = {
                         loader: "file-loader",
                         options: {
                             outputPath: "images",
+                        },
+                    },
+                ],
+            },
+            // fonts
+            {
+                test: /\.(woff(2)?|ttf|eot)(\?v=\d+\.\d+\.\d+)?$/,
+                use: [
+                    {
+                        loader: "file-loader",
+                        options: {
+                            name: "[name].[contenthash].[ext]",
+                            outputPath: "fonts/",
                         },
                     },
                 ],
