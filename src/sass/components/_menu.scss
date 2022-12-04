@@ -1,0 +1,43 @@
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--col-light-beige);
+    display: flex;
+    justify-content: center;
+
+    &--hidden {
+        display: none;
+    }
+
+    &__close-btn {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: var(--space-xl);
+    }
+
+    &__nav-links {
+        display: flex;
+        flex-direction: column;
+        gap: var(--space-md);
+    }
+
+    &__nav-link div {
+        display: flex;
+        align-items: flex-start;
+        gap: var(--space-sm);
+    }
+
+    &__preview-img {
+        width: 31.25rem;
+        height: 37.5rem;
+
+        img {
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}

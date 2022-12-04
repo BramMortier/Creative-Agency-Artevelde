@@ -1,7 +1,10 @@
+// ---------------------------------------- //
+// module imports
 import gsap from "gsap";
 import SplitType from "split-type";
+// ---------------------------------------- //
 
-const animatedElements = document.querySelectorAll(".split-text");
+// const animatedElements = document.querySelectorAll(".split-text");
 
 // animatedElements.forEach((el) => {
 //     let { words } = new SplitType(el, {

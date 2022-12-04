@@ -26,12 +26,46 @@
             <!-- header begin -->
             <header class="header container">
                 <p>GDMDEV</p>
-                <button class="icon-btn">
+                <button id="open-menu-btn" class="icon-btn">
                     <img src="./images/icons/menu-arrow.svg" alt="menu icon" />
                     <p>Menu</p>
                 </button>
             </header>
             <!-- header end -->
+
+            <!-- flyout menu begin -->
+            <section id="flyout-menu" class="menu menu--hidden container">
+                <button id="close-menu-btn" class="menu__close-btn icon-btn">
+                    <img src="./images/icons/menu-arrow.svg" alt="arrow icon" />
+                    <p>close</p>
+                </button>
+                <nav class="menu__nav">
+                    <ul class="menu__nav-links">
+                        <li class="menu__nav-link">
+                            <div>
+                                <span>1</span>
+                                <a href="#">OUR WORK</a>
+                            </div>
+                        </li>
+                        <li class="menu__nav-link menu__preview-img">
+                            <img src="./images/homepage/booklets.jpg" alt="link thumbnail image" />
+                        </li>
+                        <li class="menu__nav-link">
+                            <div>
+                                <span>2</span>
+                                <a href="./about.html">ABOUT</a>
+                            </div>
+                        </li>
+                        <li class="menu__nav-link">
+                            <div>
+                                <span>3</span>
+                                <a href="./contact.html">CONTACT</a>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
+            <!-- flyout menu end -->
 
             <!-- intro begin -->
             <section class="intro container container--fit-viewportheight">
