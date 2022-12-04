@@ -1,0 +1,12 @@
+.icon-btn {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+
+    img {
+        width: 1.5625rem;
+    }
+}

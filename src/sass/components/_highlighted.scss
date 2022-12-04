@@ -1,0 +1,19 @@
+.highlighted {
+    padding-bottom: 0 !important;
+
+    &__product {
+        display: flex;
+        flex-direction: column;
+        min-height: 100%;
+    }
+
+    &__product-title {
+        display: flex;
+        gap: var(--space-md);
+        margin-bottom: var(--space-sm);
+    }
+
+    &__product-banner {
+        flex: 1;
+    }
+}

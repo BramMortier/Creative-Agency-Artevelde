@@ -1,0 +1,30 @@
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &__images {
+        margin-block: var(--space-md);
+        display: flex;
+        gap: var(--space-sm);
+        height: 35vh;
+
+        img {
+            object-fit: cover;
+            width: 35vh;
+        }
+    }
+
+    &__footnote {
+        display: flex;
+        align-items: center;
+        gap: var(--space-md);
+    }
+
+    &__footnote-divider {
+        height: 1px;
+        width: 10rem;
+        background-color: var(--col-brown);
+    }
+}
