@@ -1,12 +1,21 @@
 :root {
-    // main colors
-    --col-light-beige: hsl(60, 16%, 91%);
-    --col-dark-beige: hsl(58, 19%, 75%);
-    --col-brown: hsl(30, 14%, 25%);
+    // beige & brown
+    --col-beige-dark: hsl(60, 17%, 80%);
+    --col-beige-mid: hsl(45, 57%, 88%);
+    --col-beige-light: hsl(40, 60%, 95%);
+    --col-brown-mid: hsl(32, 11%, 23%);
+
     // grays
-    --col-light-gray: hsl(197, 9%, 69%);
-    --col-dark-gray: hsl(194, 6%, 42%);
+    --col-black-dark: hsl(34, 7%, 19%);
+    --col-black-light: hsl(33, 14%, 25%);
+    --col-grey-dark: hsl(200, 6%, 42%);
+    --col-grey-light: hsl(200, 8%, 70%);
+    --col-offwhite: hsl(60, 17%, 91%);
     --col-white: hsl(0, 0%, 100%);
 
-    // component colors (for theming)
+    // olive
+    --col-olive-extra-dark: hsl(60, 15%, 33%);
+    --col-olive-dark: hsl(60, 17%, 48%);
+    --col-olive-mid: hsl(60, 18%, 69%);
+    --col-olive-light: hsl(60, 20%, 74%);
 }

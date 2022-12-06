@@ -1,8 +1,11 @@
 .contact {
-    padding-bottom: 0 !important;
+    padding-bottom: var(--space-xxl);
     display: flex;
     justify-content: center;
-    background-color: var(--col-dark-beige);
+    background-image: url("../../dist/images/homepage/desja-banner.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
     align-items: flex-end;
 
     &__card {
@@ -10,13 +13,17 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: space-between;
         text-align: center;
-        padding: var(--space-md);
-        background-color: var(--col-light-beige);
-        height: 70%;
+        padding: var(--space-xl);
+        background-color: var(--col-beige-light);
+        height: 80%;
 
-        h3 {
-            margin-bottom: calc(2 * var(--space-xxxl));
+        div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: var(--space-xxxl);
         }
     }
 }

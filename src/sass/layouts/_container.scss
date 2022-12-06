@@ -1,10 +1,9 @@
 .container {
     margin: 0 auto;
     max-width: 100rem;
-    padding: var(--space-xl);
 
-    &--no-padding {
-        padding: 0;
+    &--padding {
+        padding: var(--space-xl);
     }
 
     &--full-width {

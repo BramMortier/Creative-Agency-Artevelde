@@ -1,5 +1,6 @@
 .highlighted {
     padding-bottom: 0 !important;
+    margin-bottom: var(--space-xxl) !important;
 
     &__product {
         display: flex;
@@ -9,7 +10,7 @@
 
     &__product-title {
         display: flex;
-        gap: var(--space-md);
+        gap: var(--space-xl);
         margin-bottom: var(--space-sm);
     }
 

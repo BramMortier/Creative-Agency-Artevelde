@@ -1,5 +1,8 @@
 :root {
     // fonts
+    --font-big-daily: "big-daily-short";
+    --font-clash-display: "clash-display";
+    --font-surt: "surt";
 
     // base values
     --text-base-size: 1rem;
@@ -10,15 +13,24 @@
     --text-md: calc(var(--text-base-size));
     --text-lg: calc(var(--text-base-size) * 1.5);
     --text-xl: calc(var(--text-base-size) * 2);
-}
+    --text-xxl: calc(var(--text-base-size) * 2.75);
+    --text-xxxl: calc(var(--text-base-size) * 3.25);
+    --text-mega: calc(var(--text-base-size) * 7);
+    --text-huge: calc(var(--text-base-size) * 14);
 
-.primary-font {
-}
+    // letter spacing
+    --letter-space-sm: 0.125rem;
+    --letter-space-md: 0.5rem;
+    --letter-space-lg: 1rem;
 
-.secondary-font {
+    // line height
+    --line-space-base: 1;
 }
 
 body {
+    font-family: var(--font-surt);
+    color: var(--col-brown-mid);
+    line-height: 1.2;
 }
 
 h1,
@@ -27,29 +39,43 @@ h3,
 h4,
 h5,
 h6 {
+    font-family: var(--font-clash-display);
+    font-weight: 300;
 }
 
-h1,
+.text-huge {
+    font-size: var(--text-huge);
+    letter-spacing: var(--letter-space-lg);
+}
+
+.text-mega {
+    font-size: var(--text-mega);
+}
+
+.text-xxxl {
+    font-size: var(--text-xxxl);
+}
+
+.text-xxl {
+    font-size: var(--text-xxl);
+}
+
 .text-xl {
     font-size: var(--text-xl);
 }
 
-h2,
 .text-lg {
     font-size: var(--text-lg);
 }
 
-h3,
 .text-md {
     font-size: var(--text-md);
 }
 
-h4,
 .text-sm {
     font-size: var(--text-sm);
 }
 
-h5,
 .text-xs {
     font-size: var(--text-xs);
 }
@@ -58,11 +84,50 @@ p {
     font-size: var(--text-md);
 }
 
-.split-text {
-    font-kerning: none;
-    overflow: hidden;
+a {
+    color: var(--col-brown-mid);
 }
 
-a {
-    color: var(--col-brown);
+.col-light {
+    color: var(--col-offwhite);
+}
+
+.col-dark {
+    color: var(--col-brown-mid);
+}
+
+.col-olive {
+    color: var(--col-olive-mid);
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.big-display {
+    font-family: var(--font-big-daily);
+}
+
+.clash-display {
+    font-family: var(--font-clash-display);
+}
+
+.surt {
+    font-family: var(--font-surt);
+}
+
+.space-sm {
+    letter-spacing: var(--letter-space-sm);
+}
+
+.space-md {
+    letter-spacing: var(--letter-space-md);
+}
+
+.space-lg {
+    letter-spacing: var(--letter-space-lg);
+}
+
+.lineheight-base {
+    line-height: var(--line-space-base);
 }

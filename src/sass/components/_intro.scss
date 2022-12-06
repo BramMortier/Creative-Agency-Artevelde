@@ -19,12 +19,12 @@
     &__footnote {
         display: flex;
         align-items: center;
-        gap: var(--space-md);
+        gap: var(--space-xl);
     }
 
     &__footnote-divider {
         height: 1px;
-        width: 10rem;
-        background-color: var(--col-brown);
+        width: 20rem;
+        background-color: var(--col-brown-mid);
     }
 }

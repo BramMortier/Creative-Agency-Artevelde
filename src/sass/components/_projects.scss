@@ -1,26 +1,26 @@
 .projects {
     &__title {
         display: flex;
-        align-items: flex-end;
+        align-items: flex-start;
         gap: var(--space-md);
-        margin-bottom: var(--space-xxl);
+        margin-bottom: var(--space-xl);
     }
 
     &__title-icons {
         display: flex;
-        gap: var(--space-sm);
+        gap: var(--space-md);
         flex-direction: column;
         align-items: space-between;
 
         img {
-            width: 1.25rem;
+            width: 1.75rem;
         }
     }
 
     &__grid {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
-        grid-template-rows: repeat(3, 150px);
+        grid-template-rows: repeat(3, 130px);
         column-gap: calc(1.5 * var(--space-xxxl));
         row-gap: var(--space-xxxl);
 

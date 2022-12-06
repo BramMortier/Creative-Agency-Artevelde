@@ -1,7 +1,7 @@
 .usp {
     display: flex;
     gap: var(--space-md);
-    margin-bottom: calc(2 * var(--space-xxxl));
+    margin-bottom: var(--space-xxl) !important;
 
     &__gallery {
         width: 65%;

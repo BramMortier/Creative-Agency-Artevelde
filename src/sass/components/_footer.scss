@@ -1,11 +1,12 @@
 footer,
 .footer {
+    padding: 0 var(--space-xl) var(--space-lg);
     height: 80vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    background-color: var(--col-light-gray);
+    background-color: var(--col-grey-light);
 
     &__links {
         width: 100%;
