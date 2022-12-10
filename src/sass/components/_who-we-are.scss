@@ -1,0 +1,25 @@
+.who-we-are {
+    background-color: var(--col-olive-light);
+
+    &__team-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: calc(var(--space-xxxl) * 2);
+        padding: var(--space-xl) calc(var(--space-xxxl) * 2) var(--space-xxxl);
+    }
+
+    &__team-member {
+        margin-bottom: var(--space-xxl);
+
+        &:nth-of-type(even) {
+            position: relative;
+            top: 50%;
+        }
+    }
+
+    &__member-photo {
+        max-height: 600px;
+        object-fit: cover;
+        margin-bottom: var(--space-md);
+    }
+}

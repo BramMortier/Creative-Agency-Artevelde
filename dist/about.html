@@ -5,14 +5,234 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Eindopdracht</title>
-        <!--<script defer type="module" src="./bundle.js"></script>-->
+        <script defer type="module" src="./bundle.js"></script>
         <link rel="stylesheet" href="./bundle.css" />
     </head>
     <body>
         <main>
+            <!-- hero begin -->
+            <section class="sub-hero container container--fit-viewportheight">
+                <header class="header container">
+                    <a href="/index.html" class="text-lg clash-display space-sm">GDMDEV</a>
+                    <button id="open-menu-btn" class="icon-btn">
+                        <img src="./images/icons/menu-arrow.svg" alt="menu icon" />
+                        <p class="text-lg">Menu</p>
+                    </button>
+                </header>
+                <div class="sub-hero__content">
+                    <h2 class="col-light text-mega surt lineheight-base">
+                        Considered creative <br />
+                        for elevated brands.
+                    </h2>
+                </div>
+            </section>
+            <!-- hero end -->
+
+            <!-- flyout menu begin -->
+            <section id="flyout-menu" class="menu menu--hidden container container--padding">
+                <button id="close-menu-btn" class="menu__close-btn icon-btn">
+                    <img src="./images/icons/menu-arrow.svg" alt="arrow icon" />
+                    <p>close</p>
+                </button>
+                <nav class="menu__nav">
+                    <ul class="menu__nav-links">
+                        <li class="menu__nav-link">
+                            <div>
+                                <span>1</span>
+                                <a href="#">OUR WORK</a>
+                            </div>
+                        </li>
+                        <li class="menu__nav-link menu__preview-img">
+                            <img src="./images/homepage/booklets.jpg" alt="link thumbnail image" />
+                        </li>
+                        <li class="menu__nav-link">
+                            <div>
+                                <span>2</span>
+                                <a href="./about.html">ABOUT</a>
+                            </div>
+                        </li>
+                        <li class="menu__nav-link">
+                            <div>
+                                <span>3</span>
+                                <a href="./contact.html">CONTACT</a>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
+            <!-- flyout menu end -->
+
+            <!-- cases begin -->
+            <section class="cases container container--padding">
+                <div class="cases__carousel">
+                    <div class="cases__carousel-item">
+                        <img src="./images/about/elle-ola-soap.jpg" alt="case thumbnail" />
+                    </div>
+                    <div class="cases__carousel-item">
+                        <img src="./images/about/fearn-prints.jpg" alt="case thumbnail" />
+                    </div>
+                    <div class="cases__carousel-item">
+                        <img src="./images/about/stair-books.jpg" alt="case thumbnail" />
+                    </div>
+                </div>
+            </section>
+            <!-- cases end -->
+
+            <!-- our work begin -->
+            <section class="our-work container container--padding">
+                <p class="col-olive surt text-xxxl">
+                    Pairing modern minimalist design with meaningful messaging, we craft exquisite identities that reveal each brand's unique story.
+                </p>
+                <p class="text-sm">
+                    OUR WORK COMMUNICATES QUALITY AT EVERY TOUCHPOINT TO CREATE A PRESENCE THAT RESONATES DEEPLY, GENERATING THE TRUST THAT LEADS TO
+                    MARKETPLACE SUCCES
+                </p>
+            </section>
+            <!-- our work end -->
+
+            <!-- what we do begin -->
+            <section class="what-we-do container">
+                <div class="what-we-do__intro">
+                    <div class="what-we-do__backdrop">
+                        <img src="./images/about/about-backdrop.jpg" alt="backdrop image" />
+                    </div>
+                    <div class="what-we-do__list-card">
+                        <p class="big-display text-mega">What We Do</p>
+                        <ul class="what-we-do__list">
+                            <li><p class="text-lg col-olive">VISUAL IDENTITY</p></li>
+                            <li><p class="text-lg col-olive">NAMING</p></li>
+                            <li><p class="text-lg col-olive">STRATEGY</p></li>
+                            <li><p class="text-lg col-olive">PRINT</p></li>
+                            <li><p class="text-lg col-olive">BRAND VOICE</p></li>
+                            <li><p class="text-lg col-olive">MESSAGING</p></li>
+                            <li><p class="text-lg col-olive">PACKAGING DESIGN</p></li>
+                            <li><p class="text-lg col-olive">PRINT PRODUCTION</p></li>
+                            <li><p class="text-lg col-olive">CAMPAIGN</p></li>
+                            <li><p class="text-lg col-olive">SOCIAL STRATEGY</p></li>
+                            <li><p class="text-lg col-olive">PHOTOGRAPHY & VIDEO</p></li>
+                            <li><p class="text-lg col-olive">PRODUCT RENDERING</p></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="what-we-do__content">
+                    <p class="text-lg">
+                        WE VALUE BUILDING RELATIONSHIPS OF TRUST WITH OUR <br />
+                        CLIENTS AND OUR CREATIVE TALENT. WE TAKE A BESPOKE <br />
+                        APPROACH TO EACH PROJECT, WORKING IN SMALL, SPECIALIZED TEAMS WITH A NETWERK OF HIGHLY SKILLED CREATIVES
+                    </p>
+                    <div class="what-we-do__images">
+                        <img src="./images/about/homecomming-product.jpg" alt="action images" />
+                        <img src="./images/about/baby-window-scene.jpg" alt="action images" />
+                    </div>
+                </div>
+            </section>
+            <!-- what we do begin -->
+
+            <!-- featured section begin -->
+            <section class="featured container container--padding">
+                <p class="big-display text-mega lineheight-base">
+                    We've Been <br />
+                    Featured <br />
+                    On
+                </p>
+                <ul class="featured__brand-slider">
+                    <li class="featured__slider-item">
+                        <img src="./images/icons/victionary-logo.svg" alt="slider logo" />
+                    </li>
+                    <li class="featured__slider-item">
+                        <img src="./images/icons/behance-logo.svg" alt="slider logo" />
+                    </li>
+                    <li class="featured__slider-item">
+                        <img src="./images/icons/A-GA-logo.svg" alt="slider logo" />
+                    </li>
+                    <li class="featured__slider-item">
+                        <img src="./images/icons/goop-logo.svg " alt="slider logo" />
+                    </li>
+                    <li class="featured__slider-item">
+                        <img src="./images/icons/vogue-logo.svg" alt="slider logo" />
+                    </li>
+                    <li class="featured__slider-item">
+                        <img src="./images/icons/deline-logo.svg" alt="slider logo" />
+                    </li>
+                </ul>
+            </section>
+            <!-- featured section end -->
+
+            <!-- who we are begin -->
+            <section class="who-we-are container container--padding">
+                <p class="text-huge surt">Who We Are</p>
+                <div class="who-we-are__team-cards">
+                    <div class="who-we-are__team-member">
+                        <img class="who-we-are__member-photo" src="./images/about/Jane-Doe.jpg" alt="team member photo" />
+                        <h4 class="text-xxxl big-display">Jane Doe</h4>
+                        <p>Founder and creative Director</p>
+                    </div>
+                    <div class="who-we-are__team-member">
+                        <img class="who-we-are__member-photo" src="./images/about/Taylor-Lamar.jpg" alt="team member photo" />
+                        <h4 class="text-xxxl big-display">Taylor Lamar</h4>
+                        <p>Creative Director, Stratergy and Copy</p>
+                    </div>
+                    <div class="who-we-are__team-member">
+                        <img class="who-we-are__member-photo" src="./images/about/Kendrick-Swift.jpg" alt="team member photo" />
+                        <h4 class="text-xxxl big-display">Kendrick Swift</h4>
+                        <p>Managing director</p>
+                    </div>
+                </div>
+            </section>
+            <!-- who we are end -->
+
+            <!-- our studio begin -->
+            <section class="studio container">
+                <div class="studio__card">
+                    <div class="studio__card-img">
+                        <span class="big-display text-mega">Our</span>
+                        <img src="./images/about/studio-img.jpg" alt="card image" />
+                        <span class="big-display text-mega">Studio</span>
+                    </div>
+                    <p class="text-md">
+                        OUR BELGIUM BASED STUDIO IS LOCATED IN GHENT. THE HEART OF EUROPE. HOME TO HISTORIC BUILDINGS TONS OF CULTURAL ACTIVITIES AND
+                        DELIRUM TREMENS
+                    </p>
+                </div>
+            </section>
+            <!-- our studio end-->
+
+            <!-- our studio end-->
+            <section class="message container container--padding">
+                <p class="col-olive text-xxxl">
+                    GDMDEV discovers the deep <br />
+                    heart of your brand,
+                </p>
+                <div class="message__offset-content">
+                    <div class="message__image">
+                        <img src="./images/about/melk-boxes.jpg" alt="message image" />
+                        <p class="col-olive text-xxxl">creating</p>
+                    </div>
+                    <p class="col-olive text-xxxl">
+                        an elevated ecosystem of messaging and design beautifully tailored to audience lifestyles and desires.
+                    </p>
+                </div>
+            </section>
+            <!-- our studio end-->
+
+            <!-- contact begin -->
+            <section class="contact container container--fit-viewportheight">
+                <div class="contact__card">
+                    <h3 class="text-xl lineheight-base">IF YOU HAVE A POTENTIAL PROJECT OR COLLABORATION THAT YOU'D LIKE TO DISCUSS,</h3>
+                    <div>
+                        <p class="big-display text-xxl">
+                            please, <br />
+                            contact us
+                        </p>
+                        <p class="text-xxl col-olive">INFO@GDMDEV.STUDIO</p>
+                    </div>
+                </div>
+            </section>
+            <!-- contact end -->
+
             <!-- footer begin -->
             <footer class="footer container">
-                <h3>GDMDEV</h3>
+                <h3 class="col-light text-huge">GDMDEV</h3>
                 <ul class="footer__links">
                     <li class="footer__link">BEHANCE</li>
                     <li class="footer__link">INSTAGRAM</li>

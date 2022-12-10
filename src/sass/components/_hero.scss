@@ -1,4 +1,4 @@
-.hero {
+.main-hero {
     position: relative;
     display: flex;
     justify-content: center;
@@ -19,5 +19,24 @@
         align-items: center;
         justify-content: space-between;
         text-align: center;
+    }
+}
+
+.sub-hero {
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("../../dist/images/about/about-hero.jpg");
+    display: flex;
+    flex-direction: column;
+    margin-bottom: var(--space-xl) !important;
+
+    &__content {
+        position: relative;
+        padding: var(--space-md) var(--space-xl);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        flex: 1;
     }
 }

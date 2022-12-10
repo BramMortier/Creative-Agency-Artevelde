@@ -3,7 +3,7 @@
 import { openMenuBtn, closeMenuBtn, flyoutMenu } from "./constants";
 // ---------------------------------------- //
 
-if (closeMenuBtn) {
+if (openMenuBtn) {
     openMenuBtn.addEventListener("click", () => {
         flyoutMenu.classList.remove("menu--hidden");
     });

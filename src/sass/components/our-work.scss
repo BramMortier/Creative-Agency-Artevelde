@@ -1,0 +1,15 @@
+.our-work {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: calc(var(--space-xxxl) * 1.5);
+
+    :nth-child(1) {
+        max-width: 55rem;
+    }
+
+    :nth-child(2) {
+        max-width: 50rem;
+    }
+}
