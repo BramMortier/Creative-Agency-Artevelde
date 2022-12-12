@@ -7,12 +7,25 @@
     &__images {
         margin-block: var(--space-md);
         display: flex;
+        justify-content: center;
         gap: var(--space-sm);
         height: 35vh;
+    }
+
+    &__image {
+        position: relative;
+
+        span {
+            position: absolute;
+            background-color: var(--col-offwhite);
+            bottom: 0;
+            right: 0;
+            left: 0;
+            top: 0;
+        }
 
         img {
-            object-fit: cover;
-            width: 35vh;
+            height: 100%;
         }
     }
 
