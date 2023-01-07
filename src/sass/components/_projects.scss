@@ -23,6 +23,7 @@
         grid-template-rows: repeat(3, 130px);
         column-gap: calc(1.5 * var(--space-xxxl));
         row-gap: var(--space-xxxl);
+        margin-bottom: var(--space-xxl);
 
         img {
             height: 100%;

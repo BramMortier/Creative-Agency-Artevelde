@@ -4,7 +4,6 @@
     margin-bottom: var(--space-xxl) !important;
 
     &__gallery {
-        width: 65%;
         display: grid;
         grid-template-rows:
             100vh
@@ -14,7 +13,7 @@
             250px
             250px
             350px;
-        grid-template-columns: repeat(5, 1fr);
+        grid-template-columns: repeat(5, 1fr) 35%;
 
         img,
         video {
@@ -64,6 +63,10 @@
     }
 
     &__quote {
-        width: 35%;
+        grid-column: 6 / 7;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        padding-left: var(--space-sm);
     }
 }

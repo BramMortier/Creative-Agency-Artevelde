@@ -12,3 +12,16 @@ export const LineRevealToRight = (target) => {
         duration: 1,
     });
 };
+
+export const stickyAnimation = (target, container) => {
+    return gsap.to(target, {
+        opacity: 1,
+        scrollTrigger: {
+            trigger: target.parentElement,
+            start: "75% 100px",
+            end: `+=${container.getBoundingClientRect().height}`,
+            pin: true,
+            markers: true,
+        },
+    });
+};
