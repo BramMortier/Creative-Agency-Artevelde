@@ -29,32 +29,34 @@
             <!-- hero end -->
 
             <!-- flyout menu begin -->
-            <section id="flyout-menu" class="menu menu--hidden container container--padding">
+            <div class="menu__background"></div>
+            <section id="flyout-menu" class="menu container container--padding">
                 <button id="close-menu-btn" class="menu__close-btn icon-btn">
                     <img src="./images/icons/menu-arrow.svg" alt="arrow icon" />
-                    <p>close</p>
+                    <p>Close</p>
                 </button>
                 <nav class="menu__nav">
                     <ul class="menu__nav-links">
                         <li class="menu__nav-link">
                             <div>
-                                <span>1</span>
-                                <a href="#">OUR WORK</a>
+                                <span class="menu__nav-link-nr big-display text-xl">01</span>
+                                <a class="menu__nav-link-text text-mega clash-display" href="#">OUR WORK</a>
                             </div>
                         </li>
                         <li class="menu__nav-link menu__preview-img">
+                            <span class="menu__preview-img-cover"></span>
                             <img src="./images/homepage/booklets.jpg" alt="link thumbnail image" />
                         </li>
-                        <li class="menu__nav-link">
+                        <li class="menu__nav-link menu__nav-link--overlap">
                             <div>
-                                <span>2</span>
-                                <a href="./about.html">ABOUT</a>
+                                <span class="menu__nav-link-nr big-display text-xl">02</span>
+                                <a class="menu__nav-link-text text-mega clash-display" href="./about.html">ABOUT</a>
                             </div>
                         </li>
                         <li class="menu__nav-link">
                             <div>
-                                <span>3</span>
-                                <a href="./contact.html">CONTACT</a>
+                                <span class="menu__nav-link-nr big-display text-xl">03</span>
+                                <a class="menu__nav-link-text text-mega clash-display" href="./contact.html">CONTACT</a>
                             </div>
                         </li>
                     </ul>
@@ -80,10 +82,10 @@
 
             <!-- our work begin -->
             <section class="our-work container container--padding">
-                <p class="col-olive surt text-xxxl">
+                <p class="our-work__upper col-olive surt text-xxxl">
                     Pairing modern minimalist design with meaningful messaging, we craft exquisite identities that reveal each brand's unique story.
                 </p>
-                <p class="text-sm">
+                <p class="our-work__lower text-sm">
                     OUR WORK COMMUNICATES QUALITY AT EVERY TOUCHPOINT TO CREATE A PRESENCE THAT RESONATES DEEPLY, GENERATING THE TRUST THAT LEADS TO
                     MARKETPLACE SUCCES
                 </p>
@@ -115,14 +117,20 @@
                     </div>
                 </div>
                 <div class="what-we-do__content">
-                    <p class="text-lg">
+                    <p class="what-we-do__paragraph text-lg">
                         WE VALUE BUILDING RELATIONSHIPS OF TRUST WITH OUR <br />
                         CLIENTS AND OUR CREATIVE TALENT. WE TAKE A BESPOKE <br />
                         APPROACH TO EACH PROJECT, WORKING IN SMALL, SPECIALIZED TEAMS WITH A NETWERK OF HIGHLY SKILLED CREATIVES
                     </p>
                     <div class="what-we-do__images">
-                        <img src="./images/about/homecomming-product.jpg" alt="action images" />
-                        <img src="./images/about/baby-window-scene.jpg" alt="action images" />
+                        <div class="what-we-do__image">
+                            <span class="what-we-do__image-cover"></span>
+                            <img src="./images/about/homecomming-product.jpg" alt="action images" />
+                        </div>
+                        <div class="what-we-do__image">
+                            <span class="what-we-do__image-cover"></span>
+                            <img src="./images/about/baby-window-scene.jpg" alt="action images" />
+                        </div>
                     </div>
                 </div>
             </section>
@@ -130,12 +138,30 @@
 
             <!-- featured section begin -->
             <section class="featured container container--padding">
-                <p class="big-display text-mega lineheight-base">
+                <p class="featured__quote big-display text-mega lineheight-base">
                     We've Been <br />
                     Featured <br />
                     On
                 </p>
                 <ul class="featured__brand-slider">
+                    <li class="featured__slider-item">
+                        <img src="./images/icons/victionary-logo.svg" alt="slider logo" />
+                    </li>
+                    <li class="featured__slider-item">
+                        <img src="./images/icons/behance-logo.svg" alt="slider logo" />
+                    </li>
+                    <li class="featured__slider-item">
+                        <img src="./images/icons/A-GA-logo.svg" alt="slider logo" />
+                    </li>
+                    <li class="featured__slider-item">
+                        <img src="./images/icons/goop-logo.svg " alt="slider logo" />
+                    </li>
+                    <li class="featured__slider-item">
+                        <img src="./images/icons/vogue-logo.svg" alt="slider logo" />
+                    </li>
+                    <li class="featured__slider-item">
+                        <img src="./images/icons/deline-logo.svg" alt="slider logo" />
+                    </li>
                     <li class="featured__slider-item">
                         <img src="./images/icons/victionary-logo.svg" alt="slider logo" />
                     </li>

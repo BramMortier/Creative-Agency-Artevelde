@@ -14,4 +14,10 @@ footer,
         align-items: center;
         justify-content: space-between;
     }
+
+    &__top {
+        height: 600px;
+        object-fit: cover;
+        display: block;
+    }
 }

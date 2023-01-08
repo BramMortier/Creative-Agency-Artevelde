@@ -1,14 +1,17 @@
 // ---------------------------------------- //
 // module imports
 import { openMenuBtn, closeMenuBtn, flyoutMenu } from "./constants";
+import { closeMenu, openMenu } from "../animations/timelines/menuTl";
 // ---------------------------------------- //
 
 if (openMenuBtn) {
     openMenuBtn.addEventListener("click", () => {
-        flyoutMenu.classList.remove("menu--hidden");
+        openMenu();
+        flyoutMenu.classList.add("menu--active");
     });
 
     closeMenuBtn.addEventListener("click", () => {
-        flyoutMenu.classList.add("menu--hidden");
+        closeMenu();
+        flyoutMenu.classList.remove("menu--active");
     });
 }

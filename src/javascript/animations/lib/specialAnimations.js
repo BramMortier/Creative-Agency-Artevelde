@@ -19,9 +19,8 @@ export const stickyAnimation = (target, container) => {
         scrollTrigger: {
             trigger: target.parentElement,
             start: "75% 100px",
-            end: `+=${container.getBoundingClientRect().height}`,
+            end: `+=${container.getBoundingClientRect().height - 850}`,
             pin: true,
-            markers: true,
         },
     });
 };

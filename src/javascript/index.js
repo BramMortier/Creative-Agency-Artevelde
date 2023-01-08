@@ -6,4 +6,9 @@ import "../sass/style.scss";
 import "./lib/events";
 import "./animations/timelines/introTl";
 import "./animations/timelines/uspTl";
+import "./animations/timelines/menuTl";
+import "./animations/timelines/ourWorkTl";
+import "./animations/timelines/heroTl";
+import "./animations/timelines/whatWeDoTl";
+import "./animations/timelines/featuredTl";
 // ---------------------------------------- //

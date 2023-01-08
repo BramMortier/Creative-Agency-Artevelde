@@ -2,12 +2,22 @@
 // module imports
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
-import { quote, uspGallery } from "../../lib/constants";
+import { imgFadeUp } from "../lib/imageAnimations";
+import { quote, uspGallery, uspGalleryItems } from "../../lib/constants";
+import SplitType from "split-type";
+import { textFadeInWithTrigger } from "../lib/textAnimations";
 import { stickyAnimation } from "../lib/specialAnimations";
 // ---------------------------------------- //
 
 gsap.registerPlugin(ScrollTrigger);
 
-let uspTl = gsap.timeline();
+if (uspGallery) {
+    uspGalleryItems.forEach((item) => {
+        imgFadeUp(item);
+    });
 
-// uspTl.add(stickyAnimation(quote, uspGallery));
+    const quoteLines = new SplitType(quote).lines;
+    textFadeInWithTrigger(quoteLines);
+
+    stickyAnimation(quote, uspGallery);
+}

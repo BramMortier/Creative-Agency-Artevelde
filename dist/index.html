@@ -34,32 +34,34 @@
             <!-- header end -->
 
             <!-- flyout menu begin -->
-            <section id="flyout-menu" class="menu menu--hidden container container--padding">
+            <div class="menu__background"></div>
+            <section id="flyout-menu" class="menu container container--padding">
                 <button id="close-menu-btn" class="menu__close-btn icon-btn">
                     <img src="./images/icons/menu-arrow.svg" alt="arrow icon" />
-                    <p>close</p>
+                    <p>Close</p>
                 </button>
                 <nav class="menu__nav">
                     <ul class="menu__nav-links">
                         <li class="menu__nav-link">
                             <div>
-                                <span>1</span>
-                                <a href="#">OUR WORK</a>
+                                <span class="menu__nav-link-nr big-display text-xl">01</span>
+                                <a class="menu__nav-link-text text-mega clash-display" href="#">OUR WORK</a>
                             </div>
                         </li>
                         <li class="menu__nav-link menu__preview-img">
+                            <span class="menu__preview-img-cover"></span>
                             <img src="./images/homepage/booklets.jpg" alt="link thumbnail image" />
                         </li>
-                        <li class="menu__nav-link">
+                        <li class="menu__nav-link menu__nav-link--overlap">
                             <div>
-                                <span>2</span>
-                                <a href="./about.html">ABOUT</a>
+                                <span class="menu__nav-link-nr big-display text-xl">02</span>
+                                <a class="menu__nav-link-text text-mega clash-display" href="./about.html">ABOUT</a>
                             </div>
                         </li>
                         <li class="menu__nav-link">
                             <div>
-                                <span>3</span>
-                                <a href="./contact.html">CONTACT</a>
+                                <span class="menu__nav-link-nr big-display text-xl">03</span>
+                                <a class="menu__nav-link-text text-mega clash-display" href="./contact.html">CONTACT</a>
                             </div>
                         </li>
                     </ul>
@@ -92,14 +94,14 @@
             <!-- usp begin -->
             <section class="usp container">
                 <div class="usp__gallery">
-                    <img src="./images/homepage/products-top-view.jpg" alt="top view products" />
-                    <img src="./images/homepage/handsoap.jpg" alt="handsoap displayed" />
-                    <video src="./videos/case-video.mp4" preload="auto" loop autoplay></video>
-                    <img src="./images/homepage/vernis-display.jpg" alt="vernis displayed" />
-                    <img src="./images/homepage/booklets.jpg" alt="booklets displayed" />
-                    <img src="./images/homepage/street-posters.jpg" alt="street posters" />
-                    <img src="./images/homepage/wally-display.jpg" alt="wally displayed" />
-                    <img src="./images/homepage/washing-baby.jpg" alt="washing baby" />
+                    <img class="usp__gallery-item" src="./images/homepage/products-top-view.jpg" alt="top view products" />
+                    <img class="usp__gallery-item" src="./images/homepage/handsoap.jpg" alt="handsoap displayed" />
+                    <video class="usp__gallery-item" src="./videos/case-video.mp4" preload="auto" loop autoplay></video>
+                    <img class="usp__gallery-item" src="./images/homepage/vernis-display.jpg" alt="vernis displayed" />
+                    <img class="usp__gallery-item" src="./images/homepage/booklets.jpg" alt="booklets displayed" />
+                    <img class="usp__gallery-item" src="./images/homepage/street-posters.jpg" alt="street posters" />
+                    <img class="usp__gallery-item" src="./images/homepage/wally-display.jpg" alt="wally displayed" />
+                    <img class="usp__gallery-item" src="./images/homepage/washing-baby.jpg" alt="washing baby" />
                     <div class="usp__quote">
                         <p class="usp__quote-text text-xxxl col-olive">
                             We bring <br />

@@ -18,14 +18,16 @@ import {
 
 gsap.registerPlugin(ScrollTrigger);
 
-let introTl = gsap.timeline({
-    scrollTrigger: {
-        trigger: introContainer,
-    },
-});
+if (introContainer) {
+    let introTl = gsap.timeline({
+        scrollTrigger: {
+            trigger: introContainer,
+        },
+    });
 
-introTl.add(textFadeIn([introTitle, introSubTitle]));
-introTl.add(imgRevealDown(introImages), "0.5");
-introTl.add(textFadeIn(introFootnoteLeft), "1");
-introTl.add(LineRevealToRight(introFootnoteDivider), "1");
-introTl.add(textFadeIn(introFootnoteRight), "1.2");
+    introTl.add(textFadeIn([introTitle, introSubTitle]));
+    introTl.add(imgRevealDown(introImages), "0.5");
+    introTl.add(textFadeIn(introFootnoteLeft), "1");
+    introTl.add(LineRevealToRight(introFootnoteDivider), "1");
+    introTl.add(textFadeIn(introFootnoteRight), "1.2");
+}

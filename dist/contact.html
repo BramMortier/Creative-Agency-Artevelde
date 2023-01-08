@@ -5,14 +5,99 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Eindopdracht</title>
-        <!--<script defer type="module" src="./bundle.js"></script>-->
+        <script defer type="module" src="./bundle.js"></script>
         <link rel="stylesheet" href="./bundle.css" />
     </head>
     <body>
         <main>
+            <!-- header begin -->
+            <header class="header container">
+                <a href="/index.html" class="text-lg clash-display space-sm">GDMDEV</a>
+                <button id="open-menu-btn" class="icon-btn">
+                    <img src="./images/icons/menu-arrow.svg" alt="menu icon" />
+                    <p class="text-lg">Menu</p>
+                </button>
+            </header>
+            <!-- header end -->
+
+            <!-- flyout menu begin -->
+            <div class="menu__background"></div>
+            <section id="flyout-menu" class="menu container container--padding">
+                <button id="close-menu-btn" class="menu__close-btn icon-btn">
+                    <img src="./images/icons/menu-arrow.svg" alt="arrow icon" />
+                    <p>Close</p>
+                </button>
+                <nav class="menu__nav">
+                    <ul class="menu__nav-links">
+                        <li class="menu__nav-link">
+                            <div>
+                                <span class="menu__nav-link-nr big-display text-xl">01</span>
+                                <a class="menu__nav-link-text text-mega clash-display" href="#">OUR WORK</a>
+                            </div>
+                        </li>
+                        <li class="menu__nav-link menu__preview-img">
+                            <span class="menu__preview-img-cover"></span>
+                            <img src="./images/homepage/booklets.jpg" alt="link thumbnail image" />
+                        </li>
+                        <li class="menu__nav-link menu__nav-link--overlap">
+                            <div>
+                                <span class="menu__nav-link-nr big-display text-xl">02</span>
+                                <a class="menu__nav-link-text text-mega clash-display" href="./about.html">ABOUT</a>
+                            </div>
+                        </li>
+                        <li class="menu__nav-link">
+                            <div>
+                                <span class="menu__nav-link-nr big-display text-xl">03</span>
+                                <a class="menu__nav-link-text text-mega clash-display" href="./contact.html">CONTACT</a>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
+            <!-- flyout menu end -->
+
+            <!-- contact intro start -->
+            <section class="contact-hero container">
+                <h3 class="contact-hero__title col-dark">GET IN TOUTCH</h3>
+                <h2 class="contact-hero__quote text-xxl space-sm">INFO@GDMDEV.STUDIO</h2>
+                <div class="contact-images">
+                    <div class="contact-images__image">
+                        <span class="contact-images__image-cover"></span>
+                        <img src="./images/homepage/desja-top-view.jpg" alt="desja display" />
+                    </div>
+                    <div class="contact-images__image">
+                        <span class="contact-images__image-cover"></span>
+                        <img src="./images/homepage/folder.jpeg" alt="folder" />
+                    </div>
+                </div>
+                <h2 class="intro__title text-xxl space-sm">WE LOOK FORWARD</h2>
+                <p class="contact-hero__footnote text-xl big-display">To hearing from you</p>
+            </section>
+            <!-- contact intro end -->
+
+            <!-- contact form start -->
+            <form class="contact-form">
+                <div class="contact-form__control">
+                    <input class="contact-form__input" type="text" placeholder="NAME" />
+                </div>
+                <div class="contact-form__control">
+                    <input class="contact-form__input" type="text" placeholder="EMAIL" />
+                </div>
+                <div class="contact-form__control">
+                    <textarea class="contact-form__textarea" placeholder="MESSAGE"></textarea>
+                </div>
+                <button>
+                    Send
+                    <img src="./images/icons/arrow-dark.svg" alt="arrow icon" />
+                </button>
+            </form>
+            <!-- contact form end -->
+
             <!-- footer begin -->
+            <img class="footer__top" src="./images/contact/footer.jpg" alt="footer image" />
+
             <footer class="footer container">
-                <h3>GDMDEV</h3>
+                <h3 class="col-light text-huge">GDMDEV</h3>
                 <ul class="footer__links">
                     <li class="footer__link">BEHANCE</li>
                     <li class="footer__link">INSTAGRAM</li>

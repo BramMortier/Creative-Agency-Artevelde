@@ -57,9 +57,23 @@
         display: flex;
         gap: var(--space-sm);
         max-width: 40rem;
+    }
+
+    &__image {
+        width: 50%;
+        position: relative;
+
+        span {
+            position: absolute;
+            background-color: var(--col-grey-light);
+            bottom: -1px;
+            right: 0;
+            left: 0;
+            top: 0;
+        }
 
         img {
-            width: 50%;
+            height: 100%;
             object-fit: cover;
         }
     }

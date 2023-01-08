@@ -27,7 +27,8 @@
     --line-space-base: 1;
 }
 
-body {
+body,
+textarea {
     font-family: var(--font-surt);
     color: var(--col-brown-mid);
     line-height: 1.2;
