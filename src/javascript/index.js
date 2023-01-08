@@ -11,4 +11,5 @@ import "./animations/timelines/ourWorkTl";
 import "./animations/timelines/heroTl";
 import "./animations/timelines/whatWeDoTl";
 import "./animations/timelines/featuredTl";
+import "./animations/timelines/contactTl";
 // ---------------------------------------- //

@@ -9,8 +9,8 @@
     &__brand-slider {
         display: flex;
         gap: calc(var(--space-xxxl) * 1.5);
-        overflow: hidden;
         max-width: 100%;
+        overflow: hidden;
     }
 
     &__slider-item {

@@ -1,7 +1,11 @@
 // ---------------------------------------- //
 // module imports
 import gsap from "gsap";
+import { Power0 } from "gsap";
+import CSSPlugin from "gsap/CSSPlugin";
 // ---------------------------------------- //
+
+gsap.registerPlugin(CSSPlugin);
 
 // line reveal to right
 export const LineRevealToRight = (target) => {
@@ -22,5 +26,15 @@ export const stickyAnimation = (target, container) => {
             end: `+=${container.getBoundingClientRect().height - 850}`,
             pin: true,
         },
+    });
+};
+
+export const loopingBrands = (target) => {
+    return gsap.to(target, {
+        translateX: "-=1000px",
+        duration: 10,
+        yoyo: true,
+        repeat: -1,
+        ease: Power0.easeNone,
     });
 };

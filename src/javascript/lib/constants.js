@@ -37,3 +37,7 @@ export const whatWeDoImages = [...document.querySelectorAll(".what-we-do__image-
 
 // featured elements
 export const featuredQuote = document.querySelector(".featured__quote");
+export const featuredBrandsSlider = document.querySelector(".featured__brand-slider");
+
+// contact elements
+export const contactImages = [...document.querySelectorAll(".contact-images__image-cover")];
